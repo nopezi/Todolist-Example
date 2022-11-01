@@ -39,10 +39,10 @@
                 :to="`detail/${row.id}`"
                 class="text-decoration-none"
               >
-                <div class="fs-5 fw-bold text-black">{{ row.title }}</div>
+                <div data-cy="activity-item-title" class="fs-5 fw-bold text-black">{{ row.title }}</div>
               </router-link>
               <div class="d-flex flex-row">
-                <div class="me-4 fs-5">
+                <div data-cy="activity-item-date" class="me-4 fs-5">
                   {{ formatDateIsoIndonesia(row.created_at) }}
                 </div>
                 <i type="button" @click="set_hapus(row)" data-cy="activity-button-delete" class="bi bi-trash3 fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>

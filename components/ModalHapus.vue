@@ -1,6 +1,6 @@
 <template>
   <!-- Modal -->
-  <div>
+  <div data-cy="activity-item-delete-button">
     <div
       data-cy="activity-modal-delete"
       class="modal fade"
@@ -29,7 +29,7 @@
                   type="button"
                   class="btn btn-lg col-5 fw-semibold me-2"
                   data-bs-dismiss="modal"
-                  data-cy="modal-button-cancel-activity"
+                  data-cy="modal-delete-cancel-button"
                   style="
                     border-radius: 45px;
                     background-color: #f4f4f4;
@@ -44,7 +44,7 @@
                   style="border-radius: 45px"
                   data-bs-toggle="modal"
                   data-bs-target="#successHapus"
-                  data-cy="modal-button-delete-activity"
+                  data-cy="activity-item-delete-button"
                   @click="hapus"
                 >
                   Hapus
@@ -57,7 +57,7 @@
     </div>
 
     <div
-      data-cy="activity-modal-delete-success"
+      data-cy="modal-information"
       class="modal fade"
       id="successHapus"
       tabindex="-1"
