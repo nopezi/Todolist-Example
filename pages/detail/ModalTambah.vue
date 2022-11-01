@@ -30,6 +30,7 @@
             </div>
             <div class="col-12">
               <input
+                data-cy="modal-add-name-input"
                 id="nama_item"
                 type="text"
                 v-model="title"
@@ -46,6 +47,7 @@
               >
               <select
                 id="priority"
+                data-cy="modal-add-priority-dropdown"
                 class="form-control form-control-lg"
                 aria-placeholder="Very High"
                 name="priority"
@@ -121,7 +123,7 @@ export default {
       })
     },
     select(val) {
-        this.priority = val.target.value
+      this.priority = val.target.value
     },
   },
 }

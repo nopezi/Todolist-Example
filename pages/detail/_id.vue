@@ -51,7 +51,7 @@
               "
               style="background: #16abf8; border-radius: 116px"
             >
-              <i class="bi bi-plus fs-4 fw-bold"></i> Tambah
+              <i data-cy="todo-add-button" class="bi bi-plus fs-4 fw-bold"></i> Tambah
             </button>
           </div>
         </div>
@@ -90,7 +90,7 @@
               data-cy="todo-item-priority-indicator"
               :class="`label-indicator ${row.priority}`"
             ></div>
-            <span data-cy="todo-item-title" class="todo-item-title">{{
+            <span data-cy="activity-item" class="todo-item-title">{{
               row.title
             }}</span>
             <IconEdit
